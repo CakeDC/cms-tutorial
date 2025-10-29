@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -12,6 +13,7 @@
  * @since     3.3.0
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App;
 
 use Authentication\AuthenticationService;
@@ -38,8 +40,8 @@ use Cake\Routing\Router;
  * This defines the bootstrapping logic and middleware layers you
  * want to use in your application.
  */
-class Application extends BaseApplication
-    implements AuthenticationServiceProviderInterface,
+class Application extends BaseApplication implements
+    AuthenticationServiceProviderInterface,
     AuthorizationServiceProviderInterface
 {
     /**
