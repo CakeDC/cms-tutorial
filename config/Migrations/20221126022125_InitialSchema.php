@@ -19,6 +19,7 @@ class InitialSchema extends AbstractMigration
                 'default' => null,
                 'limit' => null,
                 'null' => false,
+                'signed' => false,
             ])
             ->addColumn('title', 'string', [
                 'default' => null,
@@ -68,11 +69,13 @@ class InitialSchema extends AbstractMigration
                 'default' => null,
                 'limit' => null,
                 'null' => false,
+                'signed' => false,
             ])
             ->addColumn('tag_id', 'integer', [
                 'default' => null,
                 'limit' => null,
                 'null' => false,
+                'signed' => false,
             ])
             ->addIndex(
                 [
