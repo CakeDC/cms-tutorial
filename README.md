@@ -1,7 +1,7 @@
 # CakePHP CMS Tutorial
 
 The completed CMS tutorial application created during
-https://book.cakephp.org/3.0/en/tutorials-and-examples/cms/installation.html
+https://book.cakephp.org/5/en/tutorials-and-examples/cms/installation.html
 
 ## Installation
 
@@ -15,5 +15,9 @@ composer install
 
 ## Configuration
 
-Update the `'Datasources'` configuration in `config/app.php` for your local database.
-You'll also need to create a database and run the SQL located in the tutorial.
+* Update the `'Datasources'` configuration by:
+  * editing `config/app.php` or `config/app_local.php` for your local database or
+  * edit `config/bootstrap.php` to enable use of a `.env` file (uncomment the section that loads the `.env` file) (and provide the `config/.env` file.
+* Create a database if needed.
+* Run `bin/cake migrations migrate` to create the database tables.
+
