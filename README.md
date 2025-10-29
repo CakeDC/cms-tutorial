@@ -21,6 +21,13 @@ is required.
 If you want to use your own database, update the `'Datasources'` configuration in `config/app.php`.
 You'll also need to create a database and run the SQL located in the tutorial.
 
+* Update the `'Datasources'` configuration by:
+  * editing `config/app.php` or `config/app_local.php` for your local database or
+  * edit `config/bootstrap.php` to enable use of a `.env` file (uncomment the section that loads the `.env` file) (and provide the `config/.env` file.
+* Create a database if needed.
+* Run `bin/cake migrations migrate` to create the database tables.
+
+
 ## Running the project
 
 ```bash
