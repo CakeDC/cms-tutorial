@@ -49,7 +49,7 @@ $routes->scope('/', function (RouteBuilder $routes) {
         'httponly' => true
     ]));
     $routes->applyMiddleware('csrf');
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'Articles', 'action' => 'index']);
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
 
